@@ -1,0 +1,190 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Flowers</title>
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+            crossorigin="anonymous"></script>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300&family=Yanone+Kaffeesatz:wght@300&display=swap" rel="stylesheet">
+
+    <!-- Our code -->
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+<nav class="navbar">
+    <div class="container-fluid">
+        <a href="#" class="navbar-brand">
+            <img src="https://avatars.mds.yandex.net/get-mpic/4345877/img_id3762689420636708970.jpeg/600x800" width=24px" height="24px"
+                 class="d-inline-block align-text-top logo-img">
+            FlowWOW
+        </a>
+        <button class="btn btn-success">Sign Up</button>
+    </div>
+</nav>
+<div class="row mt-2 mx-3">
+    <div class="col-7">
+        <div id="carouselImages" class="carousel slide">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="https://img.goodfon.com/original/4368x2912/e/94/violet-flowers-roses-bouquet.jpg" class="d-block w-100">
+                </div>
+                <div class="carousel-item">
+                    <img src="https://mykaleidoscope.ru/uploads/posts/2022-06/1656033159_34-mykaleidoscope-ru-p-tsveti-asteriya-krasivo-foto-37.jpg"
+                         class="d-block w-100">
+                </div>
+                <div class="carousel-item">
+                    <img src="https://i.artfile.ru/3690x2665_26962_%5Bwww.ArtFile.ru%5D.jpg" class="d-block w-100">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselImages" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselImages" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </div>
+    <div class="col-5">
+        <div class="row">
+            <img width="300px" height="200px" class="promo-img"
+                 src="https://mykaleidoscope.ru/uploads/posts/2022-06/1655990536_65-mykaleidoscope-ru-p-tsveti-yarkie-krasivo-foto-69.jpg">
+        </div>
+        <div class="row cvet">
+            <b><h3>Эти цветы единственные на всей планете!</h3></b>
+        </div>
+        <div class="row mt-4">
+            <button class="btn btn-danger botton" data-bs-toggle="modal" data-bs-target="#buyModal"><h2>КУПИТЬ ПРЯМО СЕЙЧАС!!!</h2></button>
+        </div>
+    </div>
+</div>
+<div class="row mt-4 mx-3">
+    <div class="alert alert-danger text-center promo" role="alert">
+        <b>ДО КОНЦА АКЦИИ 1 МИНУТА. КУПИТЕ ПРЯМО СЕЙЧАС!</b>
+        <h3 id="countdown">Таймер запускается...</h3>
+    </div>
+</div>
+
+<!-- Modal -->
+<div class="modal fade" id="buyModal" tabindex="-1" aria-labelledby="buyModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="buyModalLabel">Купите это!!!</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+          <p>Купите море цветов!</p>
+          <p>По акции прямо сейчас!</p>
+          <p>Цена: <span id="cost">5$ <s>1 000 000$</s></span></p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary" data-bs-dismiss="modal">В следующий раз</button>
+        <button type="button" class="btn btn-danger">Купить</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<h2 style="display: flex; justify-content: center; margin-top: 20px; margin-bottom: 20px;" > Про нас от других: </h2>
+
+<div style="margin-left: 20px;" class="otziv">
+    <div class="kart">
+        <img style="margin-bottom: 10px; margin-left: 25px;" src="https://avatars.mds.yandex.net/i?id=901dd96cdb340f3361299a8284861c9d_sr-9880043-images-thumbs&n=13" class="d-block w-50">
+        <h6 style="margin-left: 10px;" >Цветы очень классные, спасибо!</h6>
+    </div>
+    <div class="kart">
+        <img style="margin-bottom: 10px; margin-left: 25px;" src="https://franshiza.ru/files/uspeha/12.05/otzyv_o_franshize_blizkie_lyudi_elena_bondarchuk.jpg" class="d-block w-50">
+        <h6 style="margin-left: 10px;" >Очень милые цветочки!</h6>
+    </div>
+    <div class="kart">
+        <img style="margin-bottom: 10px; margin-left: 25px;" src="https://gruz-rm.ru/ssl/u/pic/21/376e181cff11eab7bceaa68ef3bb82/-/otzyvy-klientov-2.png" class="d-block w-50">
+        <h6 style="margin-left: 10px;" >Моей девушке понравились, значит и я доволен</h6>
+    </div>
+    <div class="kart">
+        <img style="margin-bottom: 10px; margin-left: 25px;" src="https://gruz-rm.ru/ssl/u/pic/8f/4861101cf911eaaafca82ba021c76d/-/xtest1.png.pagespeed.ic.BXRoCOeOnl.png" class="d-block w-50">
+        <h6 style="margin-left: 10px;" >Спасибо большое за цветы, они прелесть)</h6>
+    </div>
+    <div class="kart">
+        <img style="margin-bottom: 10px; margin-left: 25px;" src="https://www.eurohomespb.ru/assets/files/images/zhenschina-5-min.png" class="d-block w-50">
+        <h6 style="margin-left: 10px;" >Цветы супер!</h6>
+    </div>
+</div>
+
+<h2 style="display: flex; justify-content: center; margin-top: 30px;" > Как мы работаем </h2>
+
+<div style="margin-left: 20px;" class="rabota">
+    <div class="punkt">
+        <img style="margin-bottom: 10px; margin-left: 25px;" src="https://www.ajlongo.com/wp-content/uploads/2016/07/Fotolia_79445071_S.jpg" class="d-block w-50">
+        <h6 style="margin-left: 10px;" >Приходите в наш магазин</h6>
+    </div>
+    <div class="punkt">
+        <img style="margin-bottom: 10px; margin-left: 25px;" src="http://veda.vedicthemes.com/flower/wp-content/uploads/sites/48/2016/06/pdt6-500x500.jpg" class="d-block w-50">
+        <h6 style="margin-left: 10px;" >Выбираете любой букет</h6>
+    </div>
+    <div class="punkt">
+        <img style="margin-bottom: 10px; margin-left: 25px;" src="https://mbabin.ru/image/articles/gde-vzyat-kredit-dlya-pogasheniya-drugih-kreditov/pereite-na-rybli-aohcwfg.jpg" class="d-block w-50">
+        <h6 style="margin-left: 10px;">Оплачиваете покупку</h6>
+    </div>
+    <div class="punkt">
+        <img style="margin-bottom: 10px; margin-left: 25px;" src="https://flowerspluse.ru/image/catalog/973/73249614-57dd-11e5-8676-002590c469f9-500x500.jpg" class="d-block w-50">
+        <h6 style="margin-left: 10px;">Мы ждём вас снова!</h6>
+    </div>
+</div>
+    
+<div class="adres">
+    <div style="margin-left: 30px;">
+    <h2 style="margin-bottom: 20px; display: flex; justify-content: center;"> Наши контакты:</h2>
+    <h4 style="margin-top: 20px;">Адрес: Московская обл., Дедовск, ул. Космонавта Комарова, 4б </h4>
+    <h4>Телефон: +7968*******</h4>
+    <h4>Соц. сети:</h4>
+    <div style="margin-left: 110px; margin-top: 10px;">
+        <h4>Телеграм: @*******</h4>
+        <h4>Вк: ID*******</h4>
+        <h4>Instagram: ID*******</h4>
+    </div>
+    </div>
+</div>
+
+
+
+
+
+
+<script>
+    let countdownEl = document.getElementById('countdown');
+    let costEl = document.getElementById('cost');
+    let timeLeft = 60;
+    function setCountdown(){
+        if(timeLeft){
+            let minutes = Math.floor(timeLeft/60);
+            let seconds = timeLeft % 60;
+            if(seconds < 10){
+                seconds = '0' + seconds;
+            }
+            countdownEl.innerHTML = `${minutes}:${seconds}`;
+            timeLeft -= 1;
+        } else {
+            costEl.innerHTML = "1 000 000$";
+            countdownEl.innerHTML = "Время вышло!";
+            countdownEl.classList.toggle('red-text');
+        }
+    }
+    setInterval(setCountdown, 1000);
+</script>
+</body>
+</html>

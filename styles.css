@@ -1,0 +1,78 @@
+.logo-img {
+    border-radius: 50%;
+}
+
+nav{
+    background-color: rgb(231, 241, 244);
+    border-bottom: 1px solid black;
+}
+
+div.carousel-item img {
+    width: auto;
+    height: 600px;
+    margin-right: 50px;
+    border-radius: 20px;
+}
+
+.promo {
+    background: linear-gradient(90deg, rgba(44,204,138,1) 0%, rgba(0,212,255,1) 100%);
+    color: rgb(32, 52, 167);
+}
+
+.row {
+    background-color: rgb(220, 246, 246);
+    padding: 10px;
+    border-radius: 20px;
+}
+
+.red-text {
+    color: rgb(255, 0, 0);
+}
+
+.promo-img {
+    border-radius: 20px;
+    height: 400px;
+    margin-top: -5px;
+}
+.botton{
+    height: 100px;
+    margin-top: -20px;
+}
+.cvet{
+    text-align: center;
+    margin-top: 10px;
+    color: rgb(67, 39, 119);
+}
+
+.otziv {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 170px;
+}
+.kart {
+    margin: 20px;
+    width: 150px;
+    height: 140px;
+}
+
+.rabota{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 220px;
+}
+
+.punkt{
+    
+    width: 200px;
+    height: 140px;
+}
+
+.adres{
+    align-items: center;
+    width: auto;
+    height: 300px;
+    margin: 20px;
+    margin-left: 20px;
+}
